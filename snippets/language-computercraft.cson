@@ -1,0 +1,652 @@
+".source.computercraft":
+	break:
+		prefix: "break"
+		body: "break$0"
+	do:
+		prefix: "do"
+		body: "do$0"
+	else:
+		prefix: "else"
+		body: "else$0"
+	for:
+		prefix: "for"
+		body: "for$0"
+	if:
+		prefix: "if"
+		body: "if$0"
+	elseif:
+		prefix: "elseif"
+		body: "elseif$0"
+	return:
+		prefix: "return"
+		body: "return$0"
+	then:
+		prefix: "then"
+		body: "then$0"
+	repeat:
+		prefix: "repeat"
+		body: "repeat$0"
+	while:
+		prefix: "while"
+		body: "while$0"
+	until:
+		prefix: "until"
+		body: "until$0"
+	end:
+		prefix: "end"
+		body: "end$0"
+	function:
+		prefix: "function"
+		body: "function$0"
+	local:
+		prefix: "local"
+		body: "local$0"
+	false:
+		prefix: "false"
+		body: "false$0"
+	true:
+		prefix: "true"
+		body: "true$0"
+	nil:
+		prefix: "nil"
+		body: "nil$0"
+	"modem.open":
+		prefix: "modem.open"
+		body: "modem.open(${0:int n})$0"
+	"modem.close":
+		prefix: "modem.close"
+		body: "modem.close()$0"
+	"modem.transmit":
+		prefix: "modem.transmit"
+		body: "modem.transmit(${1:int sChan}, ${2:int rChan}, ${3:message}$0"
+	"bit.tobits":
+		prefix: "bit.tobits"
+		body: "bit.tobits(${0:int n})$0"
+	"bit.blshift":
+		prefix: "bit.blshift"
+		body: "bit.blshift(${1:int n}, ${0:bits bits})$0"
+	"bit.brshift":
+		prefix: "bit.brshift"
+		body: "bit.brshift(${1:int n}, ${0:bits bits})$0"
+	"bit.bxor":
+		prefix: "bit.bxor"
+		body: "bit.bxor(${1:int m}, ${0:int n})$0"
+	"bit.bor":
+		prefix: "bit.bor"
+		body: "bit.bor(${1:int m}, ${0:int n})$0"
+	"bit.band":
+		prefix: "bit.band"
+		body: "bit.band(${1:int m}, ${0:int n})$0"
+	"bit.bnot":
+		prefix: "bit.bnot"
+		body: "bit.bnot(${0:int n})$0"
+	"bot.tonumb":
+		prefix: "bot.tonumb"
+		body: "bot.tonumb(${0:table bit_tbl})$0"
+	"colors.combine":
+		prefix: "colors.combine"
+		body: "colors.combine(${1:color1}, ${2:color2}, ${3:...})$0"
+	"colors.subtract":
+		prefix: "colors.subtract"
+		body: "colors.subtract(${1:colors}, ${2:color1}, ${3:color2}, ${4:...})$0"
+	"colors.test":
+		prefix: "colors.test"
+		body: "colors.test(${1:colors}, ${2:color})$0"
+	"colours.combine":
+		prefix: "colours.combine"
+		body: "colours.combine(${1:colour1}, ${2:colour2}, ${3:...})$0"
+	"colours.subtract":
+		prefix: "colours.subtract"
+		body: "colours.subtract(${1:colours}, ${2:colour1}, ${3:colour2}, ${4:...})$0"
+	"colours.test":
+		prefix: "colours.test"
+		body: "colours.test(${1:colours}, ${2:colour})$0"
+	"coroutine.create":
+		prefix: "coroutine.create"
+		body: "coroutine.create(${1:function})$0"
+	"coroutine.resume":
+		prefix: "coroutine.resume"
+		body: "coroutine.resume(${1:coroutine}, ${2:func1}, ${3:func2}, ${4:...})$0"
+	"coroutine.running":
+		prefix: "coroutine.running"
+		body: "coroutine.running()$0"
+	"coroutine.status":
+		prefix: "coroutine.status"
+		body: "coroutine.status(${1:coroutine})$0"
+	"coroutine.wrap":
+		prefix: "coroutine.wrap"
+		body: "coroutine.wrap(${1:function})$0"
+	"coroutine.yield":
+		prefix: "coroutine.yield"
+		body: "coroutine.yield(${1:[var1]}, ${2:[var2]}, ${3:...})$0"
+	"disk.isPresent":
+		prefix: "disk.isPresent"
+		body: "disk.isPresent(${1:side})$0"
+	"disk.hasData":
+		prefix: "disk.hasData"
+		body: "disk.hasData(${1:side})$0"
+	"disk.getMountPath":
+		prefix: "disk.getMountPath"
+		body: "disk.getMountPath(${1:side})$0"
+	"disk.setLabel":
+		prefix: "disk.setLabel"
+		body: "disk.setLabel(${1:side}, ${2:label})$0"
+	"disk.getLabel":
+		prefix: "disk.getLabel"
+		body: "disk.getLabel(${1:side})$0"
+	"disk.getDiskID":
+		prefix: "disk.getDiskID"
+		body: "disk.getDiskID(${1:side})$0"
+	"disk.hasAudio":
+		prefix: "disk.hasAudio"
+		body: "disk.hasAudio(${1:side})$0"
+	"disk.getAudioTitle":
+		prefix: "disk.getAudioTitle"
+		body: "disk.getAudioTitle(${1:side})$0"
+	"disk.playAudio":
+		prefix: "disk.playAudio"
+		body: "disk.playAudio(${1:side})$0"
+	"disk.stopAudio":
+		prefix: "disk.stopAudio"
+		body: "disk.stopAudio(${1:side})$0"
+	"disk.eject":
+		prefix: "disk.eject"
+		body: "disk.eject(${1:side})$0"
+	"fs.list":
+		prefix: "fs.list"
+		body: "fs.list(${1:path})$0"
+	"fs.exists":
+		prefix: "fs.exists"
+		body: "fs.exists(${1:path})$0"
+	"fs.isDir":
+		prefix: "fs.isDir"
+		body: "fs.isDir(${1:path})$0"
+	"fs.isReadOnly":
+		prefix: "fs.isReadOnly"
+		body: "fs.isReadOnly(${1:path})$0"
+	"fs.getName":
+		prefix: "fs.getName"
+		body: "fs.getName(${1:path})$0"
+	"fs.getDrive":
+		prefix: "fs.getDrive"
+		body: "fs.getDrive(${1:path})$0"
+	"fs.getSize":
+		prefix: "fs.getSize"
+		body: "fs.getSize(${1:path})$0"
+	"fs.makeDir":
+		prefix: "fs.makeDir"
+		body: "fs.makeDir(${1:path})$0"
+	"fs.move":
+		prefix: "fs.move"
+		body: "fs.move(${1:fromPath}, ${2:toPath})$0"
+	"fs.copy":
+		prefix: "fs.copy"
+		body: "fs.copy(${1:fromPath}, ${2:toPath})$0"
+	"fs.delete":
+		prefix: "fs.delete"
+		body: "fs.delete(${1:path})$0"
+	"fs.combine":
+		prefix: "fs.combine"
+		body: "fs.combine(${1:basePath}, ${2:localPath})$0"
+	"fs.open":
+		prefix: "fs.open"
+		body: "fs.open(${1:path})$0"
+	"gps.locate":
+		prefix: "gps.locate"
+		body: "gps.locate(${1:timeout}, ${2:debug})$0"
+	"help.path":
+		prefix: "help.path"
+		body: "help.path()$0"
+	"help.setPath":
+		prefix: "help.setPath"
+		body: "help.setPath(${1:path})$0"
+	"help.lookup":
+		prefix: "help.lookup"
+		body: "help.lookup(${1:topic})$0"
+	"help.topics":
+		prefix: "help.topics"
+		body: "help.topics()$0"
+	"http.request":
+		prefix: "http.request"
+		body: "http.request(${1:url}, {2:*postData})$0"
+	"http.get":
+		prefix: "http.get"
+		body: "http.get(${1:url})$0"
+	"http.post":
+		prefix: "http.post"
+		body: "http.post(${1:url}, {2:postData})$0"
+	"os.version":
+		prefix: "os.version"
+		body: "os.version()$0"
+	"os.getComputerID":
+		prefix: "os.getComputerID"
+		body: "os.getComputerID()$0"
+	"os.getComputerLabel":
+		prefix: "os.getComputerLabel"
+		body: "os.getComputerLabel()$0"
+	"os.setComputerLabel":
+		prefix: "os.setComputerLabel"
+		body: "os.setComputerLabel(${1:label})$0"
+	"os.run":
+		prefix: "os.run"
+		body: "os.run(${1:environment}, ${2:programpath}, ${3:arguments})$0"
+	"os.loadAPI":
+		prefix: "os.loadAPI"
+		body: "os.loadAPI(${1:name})$0"
+	"os.unloadAPI":
+		prefix: "os.unloadAPI"
+		body: "os.unloadAPI(${1:name})$0"
+	"os.pullEvent":
+		prefix: "os.pullEvent"
+		body: "os.pullEvent(${1:target-event})$0"
+	"os.pullEventRaw":
+		prefix: "os.pullEventRaw"
+		body: "os.pullEventRaw()$0"
+	"os.queueEvent":
+		prefix: "os.queueEvent"
+		body: "os.queueEvent(${1:event}, ${2:param1}, ${3:param1}, {${4:...}})$0"
+	"os.clock":
+		prefix: "os.clock"
+		body: "os.clock()$0"
+	"os.startTimer":
+		prefix: "os.startTimer"
+		body: "os.startTimer(${1:timeout})$0"
+	"os.sleep":
+		prefix: "os.sleep"
+		body: "os.sleep(${1:timeout})$0"
+	"os.time":
+		prefix: "os.time"
+		body: "os.time()$0"
+	"os.day":
+		prefix: "os.day"
+		body: "os.day()$0"
+	"os.setAlarm":
+		prefix: "os.setAlarm"
+		body: "os.setAlarm(${1:time})$0"
+	"os.shutdown":
+		prefix: "os.shutdown"
+		body: "os.shutdown()$0"
+	"os.reboot":
+		prefix: "os.reboot"
+		body: "os.reboot()$0"
+	"paintutils.loadImage":
+		prefix: "paintutils.loadImage"
+		body: "paintutils.loadImage(${1:path})$0"
+	"paintutils.drawImage":
+		prefix: "paintutils.drawImage"
+		body: "paintutils.drawImage(${1:image}, ${2:x}, ${3:y})$0"
+	"paintutils.drawPixel":
+		prefix: "paintutils.drawPixel"
+		body: "paintutils.drawPixel(${1:x}, ${2:y}, ${3:color})$0"
+	"paintutils.drawLine":
+		prefix: "paintutils.drawLine"
+		body: "paintutils.drawLine(${1:startX}, ${2:startY}, ${3:endX}, ${4:endY}, ${5:color})$0"
+	"parallel.waitForAny":
+		prefix: "parallel.waitForAny"
+		body: "parallel.waitForAny(${1:function1}, ${2:function2}, ${3:...})$0"
+	"parallel.waitForAll":
+		prefix: "parallel.waitForAll"
+		body: "parallel.waitForAll(${1:function1}, ${2:function2}, ${3:...})$0"
+	"peripheral.isPresent":
+		prefix: "peripheral.isPresent"
+		body: "peripheral.isPresent(${1:side})$0"
+	"peripheral.getType":
+		prefix: "peripheral.getType"
+		body: "peripheral.getType(${1:side})$0"
+	"peripheral.getMethods":
+		prefix: "peripheral.getMethods"
+		body: "peripheral.getMethods(${1:side})$0"
+	"peripheral.call":
+		prefix: "peripheral.call"
+		body: "peripheral.call(${1:side}, ${2:methodName}, ${3:param1}, ${4:param2}, ${5:...})$0"
+	"peripheral.wrap":
+		prefix: "peripheral.wrap"
+		body: "peripheral.wrap(${1:side})$0"
+	"peripheral.getNames":
+		prefix: "peripheral.getNames"
+		body: "peripheral.getNames()$0"
+	"rednet.open":
+		prefix: "rednet.open"
+		body: "rednet.open(${1:side})$0"
+	"rednet.close":
+		prefix: "rednet.close"
+		body: "rednet.close(${1:side})$0"
+	"rednet.announce":
+		prefix: "rednet.announce"
+		body: "rednet.announce()$0"
+	"rednet.send":
+		prefix: "rednet.send"
+		body: "rednet.send(${1:receiverID}, ${2:message})$0"
+	"rednet.broadcast":
+		prefix: "rednet.broadcast"
+		body: "rednet.broadcast(${1:side})$0"
+	"rednet.receive":
+		prefix: "rednet.receive"
+		body: "rednet.receive(${1:timeout})$0"
+	"rednet.isOpen":
+		prefix: "rednet.isOpen"
+		body: "rednet.isOpen(${1:side})$0"
+	"redstone.getSides":
+		prefix: "redstone.getSides"
+		body: "redstone.getSides()$0"
+	"redstone.getInput":
+		prefix: "redstone.getInput"
+		body: "redstone.getInput(${1:side})$0"
+	"redstone.setOutput":
+		prefix: "redstone.setOutput"
+		body: "redstone.setOutput(${1:side}, ${2:value})$0"
+	"redstone.getOutput":
+		prefix: "redstone.getOutput"
+		body: "redstone.getOutput(${1:side})$0"
+	"redstone.getBundledInput":
+		prefix: "redstone.getBundledInput"
+		body: "redstone.getBundledInput(${1:side})$0"
+	"redstone.getBundledOutput":
+		prefix: "redstone.getBundledOutput"
+		body: "redstone.getBundledOutput(${1:side})$0"
+	"redstone.setBundledOutput":
+		prefix: "redstone.setBundledOutput"
+		body: "redstone.setBundledOutput(${1:side}, ${2:colors})$0"
+	"redstone.testBundledInput":
+		prefix: "redstone.testBundledInput"
+		body: "redstone.testBundledInput(${1:side}, ${2:color})$0"
+	"redstone.getAnalogInput":
+		prefix: "redstone.getAnalogInput"
+		body: "redstone.getAnalogInput(${1:side})$0"
+	"redstone.getAnalogOutput":
+		prefix: "redstone.getAnalogOutput"
+		body: "redstone.getAnalogOutput(${1:side})$0"
+	"redstone.getAnalogueInput":
+		prefix: "redstone.getAnalogueInput"
+		body: "redstone.getAnalogueInput(${1:side})$0"
+	"redstone.getAnalogueOutput":
+		prefix: "redstone.getAnalogueOutput"
+		body: "redstone.getAnalogueOutput(${1:side})$0"
+	"redstone.setAnalogOutput":
+		prefix: "redstone.setAnalogOutput"
+		body: "redstone.setAnalogOutput(${1:side}, ${2:strength})$0"
+	"redstone.setAnalogueOutput":
+		prefix: "redstone.setAnalogueOutput"
+		body: "redstone.setAnalogueOutput(${1:side}, ${2:strength})$0"
+	"rs.getSides":
+		prefix: "rs.getSides"
+		body: "rs.getSides()$0"
+	"rs.getInput":
+		prefix: "rs.getInput"
+		body: "rs.getInput(${1:side})$0"
+	"rs.setOutput":
+		prefix: "rs.setOutput"
+		body: "rs.setOutput(${1:side}, ${2:value})$0"
+	"rs.getOutput":
+		prefix: "rs.getOutput"
+		body: "rs.getOutput(${1:side})$0"
+	"rs.getBundledInput":
+		prefix: "rs.getBundledInput"
+		body: "rs.getBundledInput(${1:side})$0"
+	"rs.getBundledOutput":
+		prefix: "rs.getBundledOutput"
+		body: "rs.getBundledOutput(${1:side})$0"
+	"rs.setBundledOutput":
+		prefix: "rs.setBundledOutput"
+		body: "rs.setBundledOutput(${1:side}, ${2:colors})$0"
+	"rs.testBundledInput":
+		prefix: "rs.testBundledInput"
+		body: "rs.testBundledInput(${1:side}, ${2:color})$0"
+	"rs.getAnalogInput":
+		prefix: "rs.getAnalogInput"
+		body: "rs.getAnalogInput(${1:side})$0"
+	"rs.getAnalogOutput":
+		prefix: "rs.getAnalogOutput"
+		body: "rs.getAnalogOutput(${1:side})$0"
+	"rs.getAnalogueInput":
+		prefix: "rs.getAnalogueInput"
+		body: "rs.getAnalogueInput(${1:side})$0"
+	"rs.getAnalogueOutput":
+		prefix: "rs.getAnalogueOutput"
+		body: "rs.getAnalogueOutput(${1:side})$0"
+	"rs.setAnalogOutput":
+		prefix: "rs.setAnalogOutput"
+		body: "rs.setAnalogOutput(${1:side}, ${2:strength})$0"
+	"rs.setAnalogueOutput":
+		prefix: "rs.setAnalogueOutput"
+		body: "rs.setAnalogueOutput(${1:side}, ${2:strength})$0"
+	"shell.exit":
+		prefix: "shell.exit"
+		body: "shell.exit()$0"
+	"shell.dir":
+		prefix: "shell.dir"
+		body: "shell.dir()$0"
+	"shell.setDir":
+		prefix: "shell.setDir"
+		body: "shell.setDir(${1:path})$0"
+	"shell.path":
+		prefix: "shell.path"
+		body: "shell.path()$0"
+	"shell.setPath":
+		prefix: "shell.setPath"
+		body: "shell.setPath(${1:path})$0"
+	"shell.resolve":
+		prefix: "shell.resolve"
+		body: "shell.resolve(${1:localpath})$0"
+	"shell.resolveProgram":
+		prefix: "shell.resolveProgram"
+		body: "shell.resolveProgram(${1:name})$0"
+	"shell.aliases":
+		prefix: "shell.aliases"
+		body: "shell.aliases()$0"
+	"shell.setAlias":
+		prefix: "shell.setAlias"
+		body: "shell.setAlias(${1:path}, ${2:command})$0"
+	"shell.clearAlias":
+		prefix: "shell.clearAlias"
+		body: "shell.clearAlias(${1:path}, ${2:command})$0"
+	"shell.programs":
+		prefix: "shell.programs"
+		body: "shell.programs()$0"
+	"shell.run":
+		prefix: "shell.run"
+		body: "shell.run(${1:program}, ${2:arguments})$0"
+	"shell.getRunningProgram":
+		prefix: "shell.getRunningProgram"
+		body: "shell.getRunningProgram()$0"
+	"term.write":
+		prefix: "term.write"
+		body: "term.write(${1:text})$0"
+	"term.clear":
+		prefix: "term.clear"
+		body: "term.clear()$0"
+	"term.clearLine":
+		prefix: "term.clearLine"
+		body: "term.clearLine()$0"
+	"term.getCursorPos":
+		prefix: "term.getCursorPos"
+		body: "term.getCursorPos()$0"
+	"term.setCursorPos":
+		prefix: "term.setCursorPos"
+		body: "term.setCursorPos(${1:x}, ${2:y})$0"
+	"term.setCursorBlink":
+		prefix: "term.setCursorBlink"
+		body: "term.setCursorBlink(${1:bool})$0"
+	"term.isColor":
+		prefix: "term.isColor"
+		body: "term.isColor()$0"
+	"term.isColour":
+		prefix: "term.isColour"
+		body: "term.isColour()$0"
+	"term.getSize":
+		prefix: "term.getSize"
+		body: "term.getSize()$0"
+	"term.scroll":
+		prefix: "term.scroll"
+		body: "term.scroll(${1:n})$0"
+	"term.redirect":
+		prefix: "term.redirect"
+		body: "term.redirect(${1:target})$0"
+	"term.restore":
+		prefix: "term.restore"
+		body: "term.restore()$0"
+	"term.setTextColor":
+		prefix: "term.setTextColor"
+		body: "term.setTextColor(${1:color})$0"
+	"term.setBackgroundColor":
+		prefix: "term.setBackgroundColor"
+		body: "term.setBackgroundColor(${1:color})$0"
+	"term.setTextColour":
+		prefix: "term.setTextColour"
+		body: "term.setTextColor(${1:colour})$0"
+	"term.setBackgroundColour":
+		prefix: "term.setBackgroundColour"
+		body: "term.setBackgroundColour(${1:colour})$0"
+	"textutils.slowPrint":
+		prefix: "textutils.slowPrint"
+		body: "textutils.slowPrint(${1:text}, ${2:rate})$0"
+	"textutils.slowWrite":
+		prefix: "textutils.slowWrite"
+		body: "textutils.slowWrite(${1:text}, ${2:rate})$0"
+	"textutils.formatTime":
+		prefix: "textutils.formatTime"
+		body: "textutils.formatTime(${1:time}, ${2:TwentyFourHour})$0"
+	"textutils.tabulate":
+		prefix: "textutils.tabulate"
+		body: "textutils.tabulate(${1:table}, ${2:table2}, ${3:...})$0"
+	"textutils.pagedTabulated":
+		prefix: "textutils.pagedTabulated"
+		body: "textutils.pagedTabulated(${1:table}, ${2:table2}, ${3:...})$0"
+	"textutils.pagedPrint":
+		prefix: "textutils.pagedPrint"
+		body: "textutils.pagedPrint(${1:string}, ${2:confirmation_lines})$0"
+	"textutils.serialize":
+		prefix: "textutils.serialize"
+		body: "textutils.serialize(${1:table})$0"
+	"textutils.unserialize":
+		prefix: "textutils.unserialize"
+		body: "textutils.unserialize(${1:text})$0"
+	"textutils.urlEncode":
+		prefix: "textutils.urlEncode"
+		body: "textutils.urlEncode(${1:text})$0"
+	"turtle.craft":
+		prefix: "turtle.craft"
+		body: "turtle.craft(${1:quantity})$0"
+	"turtle.forward":
+		prefix: "turtle.forward"
+		body: "turtle.forward()$0"
+	"turtle.back":
+		prefix: "turtle.back"
+		body: "turtle.back()$0"
+	"turtle.up":
+		prefix: "turtle.up"
+		body: "turtle.up()$0"
+	"turtle.down":
+		prefix: "turtle.down"
+		body: "turtle.down()$0"
+	"turtle.turnLeft":
+		prefix: "turtle.turnLeft"
+		body: "turtle.turnLeft()$0"
+	"turtle.turnRight":
+		prefix: "turtle.turnRight"
+		body: "turtle.turnRight()$0"
+	"turtle.select":
+		prefix: "turtle.select"
+		body: "turtle.select(${1:slotNum})$0"
+	"turtle.getItemCount":
+		prefix: "turtle.getItemCount"
+		body: "turtle.getItemCount(${1:slotNum})$0"
+	"turtle.getItemSpace":
+		prefix: "turtle.getItemSpace"
+		body: "turtle.getItemSpace(${1:slotNum})$0"
+	"turtle.attack":
+		prefix: "turtle.attack"
+		body: "turtle.attack()$0"
+	"turtle.attackUp":
+		prefix: "turtle.attackUp"
+		body: "turtle.attackUp()$0"
+	"turtle.attackDown":
+		prefix: "turtle.attackDown"
+		body: "turtle.attackDown()$0"
+	"turtle.dig":
+		prefix: "turtle.dig"
+		body: "turtle.dig()$0"
+	"turtle.digUp":
+		prefix: "turtle.digUp"
+		body: "turtle.digUp()$0"
+	"turtle.digDown":
+		prefix: "turtle.digDown"
+		body: "turtle.digDown()$0"
+	"turtle.place":
+		prefix: "turtle.place"
+		body: "turtle.place(${1:signText})$0"
+	"turtle.placeUp":
+		prefix: "turtle.placeUp"
+		body: "turtle.placeUp()$0"
+	"turtle.placeDown":
+		prefix: "turtle.placeDown"
+		body: "turtle.placeDown()$0"
+	"turtle.detect":
+		prefix: "turtle.detect"
+		body: "turtle.detect()$0"
+	"turtle.detectUp":
+		prefix: "turtle.detectUp"
+		body: "turtle.detectUp()$0"
+	"turtle.detectDown":
+		prefix: "turtle.detectDown"
+		body: "turtle.detectDown()$0"
+	"turtle.compare":
+		prefix: "turtle.compare"
+		body: "turtle.compare()$0"
+	"turtle.compareUp":
+		prefix: "turtle.compareUp"
+		body: "turtle.compareUp()$0"
+	"turtle.compareDown":
+		prefix: "turtle.compareDown"
+		body: "turtle.compareDown()$0"
+	"turtle.compareTo":
+		prefix: "turtle.compareTo"
+		body: "turtle.compareTo(${1:slot})$0"
+	"turtle.drop":
+		prefix: "turtle.drop"
+		body: "turtle.drop(${1:count})$0"
+	"turtle.dropUp":
+		prefix: "turtle.dropUp"
+		body: "turtle.dropUp(${1:count})$0"
+	"turtle.dropDown":
+		prefix: "turtle.dropDown"
+		body: "turtle.dropDown(${1:count})$0"
+	"turtle.suck":
+		prefix: "turtle.suck"
+		body: "turtle.suck()$0"
+	"turtle.suckUp":
+		prefix: "turtle.suckUp"
+		body: "turtle.suckUp()$0"
+	"turtle.suckDown":
+		prefix: "turtle.suckDown"
+		body: "turtle.suckDown()$0"
+	"turtle.refuel":
+		prefix: "turtle.refuel"
+		body: "turtle.refuel(${1:quantity})$0"
+	"turtle.getFuelLevel":
+		prefix: "turtle.getFuelLevel"
+		body: "turtle.getFuelLevel()$0"
+	"turtle.transferTo":
+		prefix: "turtle.transferTo"
+		body: "turtle.transferTo(${1:slot}, ${2:quantity})$0"
+	write:
+		prefix: "write"
+		body: "write(${1:str})$0"
+	sleep:
+		prefix: "sleep"
+		body: "sleep(${1:time})$0"
+	tostring:
+		prefix: "tostring"
+		body: "tostring(${1:num})$0"
+	tonumber:
+		prefix: "tonumber"
+		body: "tonumber(${1:str})$0"
+	setfenv:
+		prefix: "setfenv"
+		body: "setfenv(${1:func}, ${2:env})$0"
+	getfenv:
+		prefix: "getfenv"
+		body: "getfenv(${1:func})$0"
+	rawset:
+		prefix: "rawset"
+		body: "rawset(${1:table}, ${2:str}, ${3:func})$0"
