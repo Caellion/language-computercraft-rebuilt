@@ -1,14 +1,12 @@
 {
   "name": "language-computercraft-rebuilt",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Ports @benanders sublimetext computercraft syntax to atom",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/Caellion/language-computercraft-rebuilt",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
